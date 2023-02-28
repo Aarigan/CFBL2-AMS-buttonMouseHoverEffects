@@ -1,0 +1,64 @@
+/* Import Poppins - Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+/* TODO : to adapt to other browsers */
+
+:root {
+  --clr-bkg: #333;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  background: var(--clr-bkg);
+}
+
+.button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.563em;
+}
+
+button {
+  padding: .625em 1.375em;
+  border: none;
+  outline: none;
+  font-size: 1.375em;
+  font-weight: 400;
+  letter-spacing: .125em;
+  text-transform: capitalize;
+  transition: transform .2s ease;
+  box-shadow: 0 .313em .625em #00000033;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+/* Button 1 */
+.button1 {
+  color: #b9b9b9;
+  border: .063em solid transparent;
+  background: #535353;
+}
+
+.button1:hover,
+.button1:focus,
+.button1:active {
+  color: #02fce7;
+  text-shadow: 0 0 .313em #02fce7,
+    0 0 .625em #02fce7;
+  background: #333;
+  transition-delay: .1s;
+}
